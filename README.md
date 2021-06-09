@@ -11,3 +11,4 @@ conda install -c anaconda scikit-image
 conda install -c conda-forge opencv
 conda install -c conda-forge ffmpeg
 conda install -c anaconda ipython
+conda install -c conda-forge matplotlib
