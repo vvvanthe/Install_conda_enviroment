@@ -1,0 +1,23 @@
+1.	Download Image form: https://hub.docker.com/
+
+Choose needed version, copy command.
+Example, I choose the tensorflow 2.1: docker pull tensorflow/tensorflow:2.1.2-gpu
+List image:
+
+  docker images
+2.	Create container:
+$docker run --gpus all --shm-size 128gb --name ($container_name) -it (images_id) 
+ 
+3.	Install some package
+apt update
+apt install ffmpeg
+
+apt install python3-opencv
+apt-get install wget
+apt install vim
+apt-get install unzip
+apt-get update 
+apt-get install ffmpeg libsm6 libxext6  -y
+pip install matplotlib 
+pip install ipython
+
