@@ -20,7 +20,7 @@ pip install pandas
 pip install matplotlib
 conda install -c conda-forge opencv
 conda install -c anaconda pillow
-
+conda install -c conda-forge vim
 # Check pytorch
 python
 import torch
