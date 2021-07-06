@@ -12,6 +12,7 @@ conda install -c conda-forge opencv
 conda install -c conda-forge ffmpeg
 conda install -c anaconda ipython
 conda install -c conda-forge matplotlib
+pip install Keras==2.3.1
 
 # Install Pytorch 
 conda create -n torch_gpu python=3.7
