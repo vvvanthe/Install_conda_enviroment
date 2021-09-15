@@ -24,6 +24,7 @@ conda install -c conda-forge opencv
 conda install -c anaconda pillow
 conda install -c conda-forge vim
 conda install -c anaconda h5py
+conda install -c conda-forge imageio 
 # Check pytorch
 python
 import torch
