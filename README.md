@@ -25,6 +25,8 @@ conda install -c anaconda pillow
 conda install -c conda-forge vim
 conda install -c anaconda h5py
 conda install -c conda-forge imageio 
+conda install -c conda-forge tqdm
+conda install -c anaconda scikit-image 
 # Check pytorch
 python
 import torch
