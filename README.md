@@ -31,3 +31,14 @@ conda install -c anaconda scikit-image
 python
 import torch
 torch.cuda.is_available()
+
+# Install tf-nightly for RXT3090, A100.
+conda create --name tf_nightly
+pip install tf-nightly-gpu==2.6.0-dev20210509
+pip install scikit-learn
+pip install matplotlib
+pip install ipython
+pip install opencv-python
+pip install scikit-image
+pip install imageio
+python3 -c 'import tensorflow as tf; print(tf.__version__)'
