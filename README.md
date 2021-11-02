@@ -41,4 +41,5 @@ pip install ipython
 pip install opencv-python
 pip install scikit-image
 pip install imageio
+sudo apt install ffmpeg
 python3 -c 'import tensorflow as tf; print(tf.__version__)'
