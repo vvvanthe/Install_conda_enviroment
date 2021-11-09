@@ -18,7 +18,7 @@ conda install -c anaconda scikit-learn
 # Install Pytorch 
 conda create -n torch_gpu python=3.7
 conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
-pip install pandas
+
 pip install matplotlib
 conda install -c conda-forge opencv
 conda install -c anaconda pillow
@@ -33,8 +33,8 @@ import torch
 torch.cuda.is_available()
 
 # Install tf-nightly for RXT3090, A100.
-conda create --name tf_nightly
-pip install tf-nightly-gpu==2.6.0-dev20210509
+conda create --name tf_gpu
+pip install tf-nightly-gpu==2.6.0-dev20210625
 pip install scikit-learn
 pip install matplotlib
 pip install ipython
