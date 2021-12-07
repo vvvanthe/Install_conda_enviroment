@@ -18,6 +18,7 @@ conda install -c anaconda scikit-learn
 # Install Pytorch 
 conda create -n torch_gpu python=3.7
 conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
+conda install pytorch torchvision cudatoolkit=11 -c pytorch-nightly
 
 pip install matplotlib
 conda install -c conda-forge opencv
@@ -27,6 +28,7 @@ conda install -c anaconda h5py
 conda install -c conda-forge imageio 
 conda install -c conda-forge tqdm
 conda install -c anaconda scikit-image 
+conda install -c conda-forge timm
 # Check pytorch
 python
 import torch
