@@ -29,10 +29,12 @@ conda install -c conda-forge imageio
 conda install -c conda-forge tqdm
 conda install -c anaconda scikit-image 
 conda install -c conda-forge timm
+conda install -c anaconda scikit-learn
 # Check pytorch
 python
 import torch
 torch.cuda.is_available()
+python3 -c 'import torch; print(torch.cuda.is_available())'
 
 # Install tf-nightly for RXT3090, A100.
 conda create --name tf_gpu python=3.8
