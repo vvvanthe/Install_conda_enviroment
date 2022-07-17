@@ -36,9 +36,10 @@ import torch
 torch.cuda.is_available()
 python3 -c 'import torch; print(torch.cuda.is_available())'
 
-# Install tf-nightly for RXT3090, A100.
+# Install tf-nightly for RXT3090, A100. (2021)
 conda create --name tf_gpu python=3.8
-pip install tf-nightly-gpu==2.6.0-dev20210625
+pip install tf-nightly-gpu==2.6.0-dev20210625 
+pip install tenforflow-gpu==2.6 # 2022
 pip install scikit-learn
 pip install matplotlib
 pip install ipython
