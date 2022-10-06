@@ -20,7 +20,7 @@ conda create -n torch_gpu python=3.7
 conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
 conda install pytorch torchvision cudatoolkit=11 -c pytorch-nightly
 
-pip install matplotlib
+conda install -c conda-forge matplotlib
 conda install -c conda-forge opencv
 conda install -c anaconda pillow
 conda install -c conda-forge vim
