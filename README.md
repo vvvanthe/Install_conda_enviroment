@@ -74,7 +74,7 @@ conda create --name tf_gpu python=3.8
 
 pip install tf-nightly-gpu==2.6.0-dev20210625 
 
-pip install tenforflow-gpu==2.6 # 2022
+pip install tensorflow-gpu==2.6 # 2022
 
 pip install scikit-learn
 
