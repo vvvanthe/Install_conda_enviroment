@@ -129,3 +129,8 @@ sudo apt-get update
  sudo apt-get install g++
  
 pip install inplace-abn
+
+
+# Setting MIG:
+https://docs.nvidia.com/datacenter/tesla/pdf/NVIDIA_MIG_User_Guide.pdf
+From 9.2 to 9.5
