@@ -1,7 +1,7 @@
 # Install_conda_enviroment\
 
 #Install tensorflow:
-'''bash
+```bash
 conda create --name tf python=3.9
 
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
@@ -36,9 +36,9 @@ conda install -c conda-forge matplotlib
 pip install Keras==2.3.1
 
 conda install -c anaconda scikit-learn
-'''
+```
 # Install Pytorch 
-'''bash
+```bash
 conda create -n torch_gpu python=3.7
 
 conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
@@ -65,22 +65,22 @@ conda install -c anaconda scikit-image
 conda install -c conda-forge timm
 
 conda install -c anaconda scikit-learn
-'''
+```
 
 # Check pytorch
 
 python
-'''bash
+```bash
 import torch
 
 torch.cuda.is_available()
 
 python3 -c 'import torch; print(torch.cuda.is_available())'
-'''
+```
 
 # Install tf-nightly for RXT3090, A100. (2021)
 
-'''bash
+```bash
 conda create --name tf_gpu python=3.8
 
 pip install tf-nightly-gpu==2.6.0-dev20210625 
@@ -102,11 +102,11 @@ pip install imageio
 sudo apt install ffmpeg
 
 python3 -c 'import tensorflow as tf; print(tf.__version__)'
-'''
+```
 
 
 # Note to install inplace-abn
-'''bash
+```bash
 
  conda create --name multilabel2 -y
  
@@ -129,13 +129,12 @@ sudo apt-get update
  sudo apt-get install g++
  
 pip install inplace-abn
-
-'''
+```
 # Setting MIG:
 https://docs.nvidia.com/datacenter/tesla/pdf/NVIDIA_MIG_User_Guide.pdf
 From 9.2 to 9.5
 
 # Unlock disk
-'''bash
+```bash
 sudo chmod -R 757 ./data1
-'''
+```
