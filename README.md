@@ -96,7 +96,15 @@ python3 -c 'import torch; print(torch.cuda.is_available())'
 
 python3 -c 'import tensorflow as tf; print(tf.__version__)'
 ```
+I was able to find a copy of the missing zlib DLL in the NVIDIA Nsight directory:
 
+C:\Program Files\NVIDIA Corporation\Nsight Systems 2022.4.2\host-windows-x64\zlib.dll
+
+I copied and renamed it to:
+
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\zlibwapi.dll
+
+since that was already in my PATH environment variable. Doing that resolved my error.
 
 # Note to install inplace-abn
 ```bash
