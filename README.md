@@ -81,25 +81,18 @@ python3 -c 'import torch; print(torch.cuda.is_available())'
 # Install tf-nightly for RXT3090, A100. (2021)
 
 ```bash
-conda create --name tf_gpu python=3.8
-
-pip install tf-nightly-gpu==2.6.0-dev20210625 
-
-pip install tensorflow-gpu==2.6 # 2022
-
-pip install scikit-learn
-
-pip install matplotlib
-
-pip install ipython
-
-pip install opencv-python
-
-pip install scikit-image
-
-pip install imageio
-
-sudo apt install ffmpeg
+> conda create -n tf_2.5 python=3.8
+> conda activate tf_2.5
+> conda install -c anaconda cudatoolkit
+> conda install -c anaconda cudnn
+> pip install tensorflow-gpu==2.5.0 
+> pip install scikit-learn
+> pip install matplotlib==3.2.0
+> pip install ipython
+> pip install opencv-python (or conda install -c conda-forge opencv)
+> pip install scikit-image==0.18.0
+> pip install imageio
+> pip install ffmpeg
 
 python3 -c 'import tensorflow as tf; print(tf.__version__)'
 ```
