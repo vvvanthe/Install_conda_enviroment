@@ -37,6 +37,11 @@ pip install Keras==2.3.1
 
 conda install -c anaconda scikit-learn
 ```
+
+
+
+
+
 # Install Pytorch 
 ```bash
 conda create -n torch_gpu python=3.7
@@ -96,6 +101,26 @@ python3 -c 'import torch; print(torch.cuda.is_available())'
 
 python3 -c 'import tensorflow as tf; print(tf.__version__)'
 ```
+
+# Install tf-nightly for RXT3090, A100. (2024) (3DeeCellTracker)
+
+```bash
+> conda create -n tf_2.8 python=3.7
+> conda activate tf_2.8
+> conda install -c anaconda cudatoolkit
+> conda install -c anaconda cudnn
+> pip install tensorflow-gpu==2.8.0 
+> pip install scikit-image==0.18.0
+> pip install imageio
+> pip install ffmpeg
+> pip install ipykernel
+> pip install stardist
+> pip install csbdeep
+
+python3 -c 'import tensorflow as tf; print(tf.__version__)'
+```
+
+
 I was able to find a copy of the missing zlib DLL in the NVIDIA Nsight directory:
 
 C:\Program Files\NVIDIA Corporation\Nsight Systems 2022.4.2\host-windows-x64\zlib.dll
