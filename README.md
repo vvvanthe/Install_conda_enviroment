@@ -109,7 +109,8 @@ python3 -c 'import tensorflow as tf; print(tf.__version__)'
 > conda activate tf_2.8
 > conda install -c anaconda cudatoolkit
 > conda install -c anaconda cudnn
-> pip install tensorflow-gpu==2.8.0 
+> pip install tensorflow-gpu==2.8.0
+> pip install protobuf==3.20.0
 > pip install scikit-image==0.18.0
 > pip install imageio
 > pip install ffmpeg
