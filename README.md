@@ -83,7 +83,7 @@ torch.cuda.is_available()
 python3 -c 'import torch; print(torch.cuda.is_available())'
 ```
 
-# Install tf-nightly for RXT3090, A100. (2021)
+# Install tf-nightly for RXT4090, A100. (2021)
 
 ```bash
 > conda create -n tf_2.5 python=3.8
@@ -102,7 +102,7 @@ python3 -c 'import torch; print(torch.cuda.is_available())'
 python3 -c 'import tensorflow as tf; print(tf.__version__)'
 ```
 
-# Install tf-nightly for RXT3090, A100. (2024) (3DeeCellTracker)
+# Install tf-nightly for RXT4090, A100. (2024) (3DeeCellTracker)
 
 ```bash
 > conda create -n tf_2.8 python=3.7
@@ -121,12 +121,11 @@ python3 -c 'import tensorflow as tf; print(tf.__version__)'
 python3 -c 'import tensorflow as tf; print(tf.__version__)'
 ```
 
-
-I was able to find a copy of the missing zlib DLL in the NVIDIA Nsight directory:
+If encountering some errors, please try  to find a copy of the missing zlib DLL in the NVIDIA Nsight directory:
 
 C:\Program Files\NVIDIA Corporation\Nsight Systems 2022.4.2\host-windows-x64\zlib.dll
 
-I copied and renamed it to:
+Then, I copied and renamed it to:
 
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\zlibwapi.dll
 
